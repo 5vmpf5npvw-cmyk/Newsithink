@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsithink — News. Perspective. Your Take.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="topbar">
+    <a class="brand" href="#"><span>NEWS</span>ITHINK</a>
+    <button class="menu-button" id="menuButton">☰</button>
+  </div>
+  <nav id="nav">
+    <a href="#latest">Latest</a><a href="#us">U.S.</a><a href="#world">World</a>
+    <a href="#politics">Politics</a><a href="#economy">Economy</a>
+    <a href="#opinion">Opinion</a><a href="#about">About</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <div><p class="eyebrow">INDEPENDENT NEWS & OPINION</p>
+  <h1>News.<br><em>Perspective.</em><br>Your Take.</h1>
+  <p class="hero-copy">A place to understand what happened — and talk about what it means.</p>
+  <a class="button" href="#latest">Read the latest</a></div>
+  <div class="hero-card"><span class="label">WELCOME TO NEWSITHINK</span>
+  <h2>Facts first. Opinions clearly labeled.</h2>
+  <p>We separate the story from the commentary so readers can make up their own minds.</p></div>
+</section>
+<section id="latest" class="section">
+  <div class="section-heading"><p class="eyebrow">THE LATEST</p><h2>What's happening</h2></div>
+  <div class="story-grid">
+    <article class="story featured"><div class="placeholder">FEATURED STORY</div><p class="category">U.S. NEWS</p>
+    <h3>What today's biggest story could mean for Americans</h3>
+    <p class="summary">Your lead article goes here. Replace this sample with your own reporting, sources, and analysis.</p>
+    <a href="#" class="read">Read story →</a></article>
+    <article class="story"><p class="category">WORLD</p><h3>A changing world deserves a closer look</h3>
+    <p class="summary">A short introduction to your latest international story.</p><a href="#" class="read">Read story →</a></article>
+    <article class="story"><p class="category">POLITICS</p><h3>The political debate everyone is talking about</h3>
+    <p class="summary">Give readers the facts, then explain your perspective.</p><a href="#" class="read">Read story →</a></article>
+  </div>
+</section>
+<section id="opinion" class="opinion"><div class="section-heading"><p class="eyebrow">OPINION</p><h2>My Take</h2></div>
+<div class="opinion-content"><div><h3>“Here's what I think — and why.”</h3>
+<p>Opinion is where Newsithink becomes personal. Explain your reasoning, acknowledge what you don't know, and invite readers to disagree respectfully.</p></div>
+<a class="button light" href="#">Read opinions</a></div></section>
+<section id="about" class="about section"><p class="eyebrow">ABOUT NEWSITHINK</p>
+<h2>Independent. Curious. Straightforward.</h2>
+<p>Newsithink is an independent blog for people who want current events explained clearly, followed by honest perspective. The goal isn't to tell readers what to think — it's to give them something worth thinking about.</p></section>
+</main>
+<footer><div><a class="brand footer-brand" href="#"><span>NEWS</span>ITHINK</a><p>News. Perspective. Your Take.</p></div>
+<p>© 2026 Newsithink. All rights reserved.</p></footer>
+<script>
+const menuButton = document.getElementById('menuButton');
+const nav = document.getElementById('nav');
+menuButton.addEventListener('click', () => nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => nav.classList.remove('open'));
+});
+</script>
+</body>
+</html>
